@@ -13,6 +13,21 @@ To implement univariate Linear Regression to fit a straight line using least squ
 ![eqn2](./eq2.jpg)  
 5.	Use the slope m and the y -intercept to form the equation of the line.
 6.	Obtain the straight line equation Y=mX+b and plot the scatterplot.
+
+### **Algorithm: Linear Regression using Least Squares**
+
+1. **Input** the arrays `X` and `Y` representing the data points.
+2. **Calculate** the means of `X` and `Y` (denoted as `Xmean` and `Ymean`).
+3. **Initialize** numerator and denominator to 0.
+4. **Iterate** through all data points to compute the sum of products of deviations (numerator).
+5. **Compute** the sum of squared deviations of `X` (denominator).
+6. **Calculate** the slope $m$ as `slope = num / den`.
+7. **Determine** the intercept $c$ using `c = Ymean - slope * Xmean`.
+8. **Predict** values of `Y` using the equation $y = mx + c$.
+9. **Plot** the original data points as a red scatter plot.
+10. **Plot** the regression line as a blue line and display the plot.
+
+
 ## Program
 ```
 Developed by: Karthikeyan C
